@@ -14,37 +14,37 @@ Page({
         open: false,
         pages: [
           {
-            zh: '微信登录',
+            zh: '微信登录', // WeChatログイン
             url: 'login/login'
           }, {
             zh: '获取用户信息',
             url: 'get-user-info/get-user-info'
           }, {
-            zh: '发起支付',
+            zh: '发起支付', // 支払いを開始する
             url: 'request-payment/request-payment'
           }, {
-            zh: '转发',
+            zh: '转发', // 共有
             url: 'share/share'
           }, {
-            zh: '转发按钮',
+            zh: '转发按钮', // 共有ボタン
             url: 'share-button/share-button'
           }, {
-            zh: '客服消息',
+            zh: '客服消息', // カスタマーサービスメッセージ
             url: 'custom-message/custom-message'
           }, {
-            zh: '订阅消息',
+            zh: '订阅消息', // ニュースを購読する
             url: 'subscribe-message/subscribe-message'
           }, {
-            zh: '收货地址',
+            zh: '收货地址', // お届け先の住所
             url: 'choose-address/choose-address'
           }, {
-            zh: '获取发票抬头',
+            zh: '获取发票抬头', // 請求書ヘッダーを選択
             url: 'choose-invoice-title/choose-invoice-title'
           }, {
-            zh: '生物认证',
+            zh: '生物认证', // 生体認証
             url: 'soter-authentication/soter-authentication'
           }, {
-            zh: '设置',
+            zh: '设置', // セットアップ
             url: 'setting/setting'
           }
         ]
@@ -179,7 +179,7 @@ Page({
           }, {
             zh: 'UDPSocket',
             url: 'udp-socket/udp-socket'
-          },{
+          }, {
             zh: 'mDNS',
             url: 'mdns/mdns'
           }
@@ -207,10 +207,10 @@ Page({
           }, {
             zh: '视频',
             url: 'video/video'
-          },{
+          }, {
             zh: '音视频合成',
             url: 'media-container/media-container'
-          },{
+          }, {
             zh: '动态加载字体',
             url: 'load-font-face/load-font-face'
           }
@@ -273,8 +273,8 @@ Page({
     })
 
     if (wx.onThemeChange) {
-      wx.onThemeChange(({ theme }) => {
-        this.setData({ theme })
+      wx.onThemeChange(({theme}) => {
+        this.setData({theme})
       })
     }
   },
